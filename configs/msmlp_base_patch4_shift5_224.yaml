@@ -1,0 +1,12 @@
+MODEL:
+  TYPE: ms_mlp
+  NAME: ms_mlp_base_patch4_shift5_224
+  DROP_PATH_RATE: 0.5
+  MSMLP:
+    EMBED_DIM: 128
+    DEPTHS: [ 3, 3, 27, 3 ]
+    SHIFT_SIZE: 5
+    SHIFT_DIST: [-2,-1,0,1,2]
+    MIX_SIZE: [[1,1,3,5,7], [1,3,3,5,7], [1,5,5,5,7], [1,7,7,7,7]]
+    PATCH_SIZE: 4
+
